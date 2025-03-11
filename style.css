@@ -1,40 +1,146 @@
+/* Custom CSS (with enhancements) */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    background-color: #FEFAE0;
     color: #333;
-}
-
-#github-profiles {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    color: #333;
-    border-bottom: 2px solid #333;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
-
-p {
     line-height: 1.6;
 }
 
-a {
-    color: #007bff;
+header, footer {
+    background-color: #333533;
+    color: #FEFAE0;
+    text-align: center;
+    padding: 1em 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #606C5F;
+}
+h1 {
+    color: #dde5b6;
+}
+
+nav a {
+    color: #FEFAE0;
     text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s ease; /* Smooth hover effect */
 }
 
-a:hover {
-    text-decoration: underline;
+nav a:hover {
+    color: #DDA15E; /* Highlight color on hover */
 }
 
-/* Added some padding */
-nav {
-    padding: 10px 0;
+section {
+    padding: 30px;  /* Increased padding */
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Stronger shadow */
+}
+
+.project {
+    margin-bottom: 30px; /* Increased spacing */
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.project:last-child {
+    border-bottom: none;
+}
+
+ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+/* GitHub Profile Styling */
+.github-profile {
+    margin-bottom: 15px;
+}
+
+.github-profile a {
+    color: #606C5F;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Skills Styling */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    background-color: #DDA15E;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+/* About Section Enhancements */
+#about p {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+/* Code Snippet Styling */
+.code-snippet {
+    background-color: #f0f0f0;
+    border: 1px solid #D3D2D6;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto; /* For scrollable code snippets */
+    font-family: monospace;
+    white-space: pre-wrap;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav a {
+        margin: 0 5px; /* Adjust spacing for smaller screens */
+    }
+
+    section {
+        padding: 15px; /* Reduce padding on smaller screens */
+        margin: 10px;
+    }
+}
+
+/* Accessibility: Basic Dark Mode (Toggle with JavaScript for real functionality) */
+body.dark-mode {
+    background-color: #333;
+    color: #eee;
+}
+
+body.dark-mode section {
+    background-color: #444;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode h1, body.dark-mode h2, body.dark-mode h3,
+body.dark-mode .github-profile a {
+    color: #DDA15E;
+}
+
+/* Button Styling */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #606C5F; /* Muted Green */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #283618; /* Dark Green */
 }
